@@ -70,3 +70,6 @@ The `data/` directory holds files that might be useful for testing. It is a loca
 
 It may be better to avoid using the same name for a package and either a sub-package or module. I have found it difficult to get some `__init__.py` imports to behave properly when there are naming conflicts like these.
 
+### Testing
+
+The `tests/` subdirectory can have an `__init__.py` too. This makes importing from the modules we want to test easier.
