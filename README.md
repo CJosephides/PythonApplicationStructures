@@ -25,10 +25,10 @@ SinglePackage/
 ├── single_package
 │   ├── helpers_single_package.py
 │   ├── __init__.py
-│   └── single_package.py
+│   └── single.py
 ├── tests
 │   ├── test_helpers_single_package.py
-│   └── test_single_package.py
+│   └── test_single.py
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
@@ -48,22 +48,12 @@ MultiplePackages/
 │   └── packages.md
 ├── multiple_packages
 │   ├── multiple
-│   │   ├── helpers_multiple.py
-│   │   ├── __init__.py
-│   │   └── multiple.py
 │   ├── packages
-│   │   ├── helpers_packages.py
-│   │   ├── __init__.py
-│   │   └── packages.py
 │   ├── __init__.py
 │   └── runner.py
 ├── tests
 │   ├── multiple
-│   │   ├── test_helpers_multiple.py
-│   │   └── test_multiple.py
 │   └── packages
-│       ├── test_helpers_packages.py
-│       └── test_packages.py
 ├── LICENSE
 └── README.md
 ```
@@ -79,3 +69,4 @@ The `data/` directory holds files that might be useful for testing. It is a loca
 ### Naming
 
 It may be better to avoid using the same name for a package and either a sub-package or module. I have found it difficult to get some `__init__.py` imports to behave properly when there are naming conflicts like these.
+
