@@ -73,3 +73,19 @@ It may be better to avoid using the same name for a package and either a sub-pac
 ### Testing
 
 The `tests/` subdirectory can have an `__init__.py` too. This makes importing from the modules we want to test easier.
+
+### Virtual Environment
+
+I have noticed the following troublesome behavior when I attempt to import the single-package module: when I had *not* activated the virtual environment, then `single_package/__init__.py`:
+
+```
+import single, helpers_single_package
+```
+
+works. If I *had* activated the virtual environment, then I had to change `single_package/__init__.py` to
+
+```
+from single_package import single, helpers_single_package
+``
+
+to avoid getting an import error. Fortunately, the latter solution works with and without virtual environment activation; therefore, it is the correct way to populate `__init__.py`.
