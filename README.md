@@ -73,3 +73,9 @@ The `bin/` directory holds any executable files. Executables should not contain 
 The `docs/` directory holds documentation; ideally, we should have separate documentation for every internal sub-module.
 
 The `data/` directory holds files that might be useful for testing. It is a location for files that the application will ingest or produce.
+
+## Notes
+
+### Naming
+
+It may be better to avoid using the same name for a package and either a sub-package or module. I have found it difficult to get some `__init__.py` imports to behave properly when there are naming conflicts like these.

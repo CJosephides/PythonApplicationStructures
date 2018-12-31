@@ -1,4 +1,4 @@
-from helpers_single_package import Helper
+from single_package.helpers_single_package import Helper
 
 class Single():
 
